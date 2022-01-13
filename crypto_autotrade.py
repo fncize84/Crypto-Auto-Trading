@@ -61,7 +61,7 @@ print("autotrade start")
 # 시작 메세지 슬랙 전송
 post_message(myToken,"#stock-trading", "autotrade start")
 
-자동매매 시작
+#자동매매 시작
 
 while True:
     try:
@@ -76,8 +76,6 @@ while True:
                 ma5 = get_ma5(t)
                 current_price = get_current_price(t)
                 balance = get_balance(t)
-
-                print(balance)
 
                 if balance == 0 and target_price < current_price and ma5 < current_price:
                     buy_result = upbit.buy_market_order(t, buy_amount*0.9995)
