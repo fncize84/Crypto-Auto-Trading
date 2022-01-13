@@ -4,8 +4,8 @@ import datetime
 import requests
 from slacker import Slacker
 
-access = "2nUWiu0PnEtvlUlpiq5PJGc0b1N4ix5fPox6KRYA"
-secret = "AmSsPXpxvx12UEZsxBIIPyLU0ZVsDiMl2cSLtX5X"
+access = "access"
+secret = "secret"
 
 myToken = "xoxb-2918010100544-2894323027731-UuwsGPLiFR3NA5x5O8L5m6o6"
 
