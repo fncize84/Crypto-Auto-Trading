@@ -6,11 +6,11 @@ import schedule
 import pandas as pd
 import requests
 
-access = "2nUWiu0PnEtvlUlpiq5PJGc0b1N4ix5fPox6KRYA"
-secret = "AmSsPXpxvx12UEZsxBIIPyLU0ZVsDiMl2cSLtX5X"
+access = "access"
+secret = "secret"
 
-token = "5094155373:AAGwbZOBTw990tvU6TIdHWilsHP7R95T-qM"
-chat_id = "5033041863"
+token = "token"
+chat_id = "chat_id"
 
 def post_message(chat_id, message):
 	bot = telegram.Bot(token)
