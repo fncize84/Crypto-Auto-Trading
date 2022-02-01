@@ -7,8 +7,8 @@ import pandas as pd
 import requests
 import openpyxl
 
-access = "2nUWiu0PnEtvlUlpiq5PJGc0b1N4ix5fPox6KRYA"
-secret = "AmSsPXpxvx12UEZsxBIIPyLU0ZVsDiMl2cSLtX5X"
+access = "access"
+secret = "secret"
 
 token = "5094155373:AAGwbZOBTw990tvU6TIdHWilsHP7R95T-qM"
 chat_id = "5033041863"
@@ -139,7 +139,7 @@ def get_win_rate():
         win_count = DF['수익/손실'].value_counts()[1]
         win_rate = (win_count / total_count) * 100
     except Exception:
-        total_count, win_count, win_rate = 0
+        total_count = win_count = win_rate = 0
 
     return total_count, win_count, win_rate
 
