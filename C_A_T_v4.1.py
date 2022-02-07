@@ -7,7 +7,7 @@ import pandas as pd
 import openpyxl
 from Upb_Get_Data import get_target_price, get_current_price, get_ma5, get_start_time, return_coin_name
 
-program_version = 'Auto Trade v4.0_2022-02-07'
+program_version = 'Auto Trade v4.1_2022-02-07'
 
 access = "2nUWiu0PnEtvlUlpiq5PJGc0b1N4ix5fPox6KRYA"
 secret = "AmSsPXpxvx12UEZsxBIIPyLU0ZVsDiMl2cSLtX5X"
