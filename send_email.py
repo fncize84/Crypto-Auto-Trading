@@ -6,7 +6,7 @@ from email.mime.application import MIMEApplication
 def send_final():
 	sendEmail = "fncize@gmail.com"
 	recvEmail = "fncize@gmail.com"
-	password = "cswyifzraitnldfi"
+	password = "pw"
 	smtpName = "smtp.gmail.com"
 	smtpPort = 587
 
