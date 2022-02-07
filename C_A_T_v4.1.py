@@ -168,13 +168,13 @@ while True:
         krw = upbit.get_balance("KRW")
         buy_amount = 0 if count == 5 else krw/(trading_size-count)
         now = datetime.datetime.now()
-        start_time = get_start_time("KRW-BTC")
+        start_time = get_start_time()
         end_time = start_time + datetime.timedelta(hours=18)
         sell_time = start_time + datetime.timedelta(days=1) - datetime.timedelta(minutes=10)
 
         if start_time < now < sell_time:
             for t in ticker:
-                target_price = get_target_price(t)
+                target_price = get_target_price(t,k)
                 ma5 = get_ma5(t)
                 current_price = get_current_price(t)
                 balance = upbit.get_balance(t)
