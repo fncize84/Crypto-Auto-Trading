@@ -8,10 +8,11 @@ def order_record(result, file_path):
     try:
         wb = openpyxl.load_workbook(file_path)
         ws = wb['order_record']
-    except FileNotFoundError:
-        wb = openpyxl.Workbook()
-        ws = wb.active
-        ws.title = 'order_record'    
+        
+    except KeyError:
+        wb.create_sheet('order_record')
+        ws = wb['order_record']
+   
     ws.append([str(result)])
     wb.save(file_path)
 
